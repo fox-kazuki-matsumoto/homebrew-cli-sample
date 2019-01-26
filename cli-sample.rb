@@ -1,6 +1,6 @@
 require "formula"
 
-HOMEBREW_CLI_SAMPLE_VERSION='1.0.1'
+HOMEBREW_CLI_SAMPLE_VERSION='1.0.2'
 
 class CliSample < Formula
   url "https://github.com/fox-kazuki-matsumoto/cli-sample/releases/download/v#{HOMEBREW_CLI_SAMPLE_VERSION}/cli-sample_#{HOMEBREW_CLI_SAMPLE_VERSION}_darwin_amd64.tar.gz"
@@ -10,10 +10,8 @@ class CliSample < Formula
   version "v#{HOMEBREW_CLI_SAMPLE_VERSION}"
   head 'https://github.com/fox-kazuki-matsumoto/cli-sample.git', :branch => 'master'
 
-  depends_on 'go' => :build
-
   def install
-    bin.install 'qiitasearch'
+    bin.install 'cli-sample'
   end
 
 end

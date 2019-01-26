@@ -13,7 +13,7 @@ class CliSample < Formula
   depends_on 'go' => :build
 
   def install
-    bin.install 'cli-sample'
+    bin.install 'qiitasearch'
   end
 
 end
